@@ -18,6 +18,15 @@
       <button (click)="flag=!flag">Click me</button>
     </div>
   </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-4">
+      <input type="text" [(ngModel)]="inputData">
+
+    </div>
+    <div class="col-xs-4"><button (click)="clearInp()" [disabled]="inputData === ''">Clear Input</button></div>
+    <div class="col-xs-4">{{inputData}}</div>
+  </div>
 </div>
 
 
