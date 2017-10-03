@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  flag = true;
+  inputData: string = '';
+  flag: boolean = true;
+  clearInp(){
+    this.inputData = "";
+  }
 }
